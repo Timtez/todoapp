@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TimTez TODO-APP</title>
+    <link
+      rel="shortcut icon"
+      href="assets/favicon-32x32.png"
+      type="image/x-icon"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&family=Open+Sans:wght@600&family=Poppins:ital,wght@0,300;1,600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="header"></header>
+
+    <section class="container">
+      <div class="todo-top">
+        <header class="todoHeader">
+          <h1>T O D O</h1>
+
+          <img src="assets/icon-moon.svg" alt="night mode toggle" />
+        </header>
+        <div class="input-section">
+          <button></button>
+          <input
+            class="input"
+            aria-label="input-section"
+            type="text"
+            placeholder="Enter what you want to accomplish"
+            onkeydown="handleKeyPress(event)"
+          />
+        </div>
+      </div>
+
+      <div class="todos">
+        <ul class="todo-list"></ul>
+      </div>
+
+      <footer class="footer">
+        <div class="count"><span></span> items left</div>
+        <div class="filters">
+          <label>
+            <input type="radio" name="filter" id="all" checked />
+            <span>All</span>
+          </label>
+
+          <label>
+            <input type="radio" name="filter" id="active" />
+            <span>Active</span>
+          </label>
+
+          <label>
+            <input type="radio" name="filter" id="completed" />
+            <span>Completed</span>
+          </label>
+        </div>
+
+        <div class="clear">Clear Completed</div>
+      </footer>
+    </section>
+
+    <footer class="props">
+      <div class="small-talk">
+        <p>
+          This project was done by
+          <span class="name">Timothy Olisaeloka Ngonadi</span>
+        </p>
+      </div>
+      <div class="contact-me">
+        <i fa fa-facebook><a href="www.facebook.com/simba804">Facebook</a></i>
+        <i class="fa fa-twitter"
+          ><a href="www.twitter.com/timtezNG">Twitter</a></i
+        >
+        <i class="fa fa-whatsapp"
+          ><a href="www.whatsapp.com/+2348176194384">Whatsapp</a></i
+        >
+      </div>
+    </footer>
+    <script src="index.js"></script>
+    <script src="theme.js"></script>
+  </body>
+</html>
